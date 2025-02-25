@@ -52,7 +52,7 @@ const KanbanLayout = () => {
   const handleAddColumn = () => {
     const newColumn: Column = {
       id: generateId(),
-      title: `Untitled Board ${columns.length + 1}`,
+      title: `Untitled Board`,
       todos: [],
     };
     dispatch(addColumn(newColumn));
