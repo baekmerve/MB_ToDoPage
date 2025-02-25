@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React, { useEffect, useMemo } from "react";
 import { LuCirclePlus } from "react-icons/lu";
-import { Column } from "../model/types";
+import { Column } from "../types/types";
 import { v4 as uuidv4 } from "uuid";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../store/store";

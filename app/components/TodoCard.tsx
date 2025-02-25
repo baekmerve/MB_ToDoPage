@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Id, Todo } from "../model/types";
+import { Id, Todo } from "../types/types";
 import { RiDeleteBinLine } from "react-icons/ri";
 import { Card } from "@/components/ui/card";
 import { useDispatch } from "react-redux";

@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Column } from "../model/types"; // Assuming you have these types
+import { Column } from "../types/types"; // Assuming you have these types
 import { RootState } from "../store/store";
 import { useSelector } from "react-redux";
 import ColumnLayout from "../components/ColumnLayout";
@@ -13,7 +13,9 @@ const SearchPage = () => {
   const searchParams = useSearchParams();
   const query = searchParams?.get("query")?.toLowerCase() || "";
 
-  const columns = useSelector((state: RootState) => state.columns.present.columns);
+  const columns = useSelector(
+    (state: RootState) => state.columns.present.columns
+  );
 
   useEffect(() => {
     if (query.trim()) {

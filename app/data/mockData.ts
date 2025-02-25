@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-import { Column } from "../model/types";
+import { Column } from "../types/types";
 
 const generateId = () => {
   return uuidv4();
@@ -9,14 +9,20 @@ const generateId = () => {
 export const mockData: Column[] = [
   {
     id: generateId(),
-    title: "Backlog",
+    title: "Todo",
     todos: [],
   },
   {
     id: generateId(),
-    title: "In progess",
+    title: "In progress",
     todos: [],
   },
+  {
+    id: generateId(),
+    title: "Backlog",
+    todos: [],
+  },
+
   {
     id: generateId(),
     title: "To test",

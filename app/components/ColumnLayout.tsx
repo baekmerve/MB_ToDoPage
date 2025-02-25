@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { Column, Id } from "../model/types";
+import { Column, Id } from "../types/types";
 import { LuCirclePlus } from "react-icons/lu";
 import { SortableContext, useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";

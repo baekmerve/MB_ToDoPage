@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Id, Column, Todo } from "../model/types";
+import { Id, Column, Todo } from "../types/types";
 import { mockData } from "../data/mockData";
 import undoable from "redux-undo";
 import { arrayMove } from "@dnd-kit/sortable";
